@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Navigation</title>
+</head>
+<body>
+<header>
+<div class="navbar">
+    <div class="logo">Divya</div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="burger-menu">&#9776;</div>
+</div>
+<div class="firstsec">
+<div class="detail">
+    <h1>I'M Divyashree <span>Gowda</span></h1>
+    <p>This is my official portfolio website to shows all<br/>Details and work experience of web development</p>
+    <a href="#">DOWNLOAD CV</a>
+</div>
+<div class="gif">
+    <img src="gif1.gif" alt="img"/>
+</div></div>
+<center>
+<p>
+    <h1>About</h1><br>
+    Skills involve practice. You master skills through repetitiveness and consistent effort. Experience is when you apply your knowledge and skills to a specific situation or context. If you isolate the three and focus on knowledge, you can learn all there is to know about playing the violin in theory.</p></center>
+    <center>
+        <div class="skill">
+            <h1 align="center">Skills</h1><br/>
+            <ul>
+                <li><a href="#"><img src="c.svg" alt="C"></a></li>
+                <li><a href="#"><img src="cs.svg" alt="C+"></a></li>
+                <li><a href="#"><img src="html.svg" alt="HTML"></a></li>
+                <li><a href="#"><img src="css.svg" alt="CSS"></a></li>
+                <li><a href="#"><img src="javascript.svg" alt="JavaScript"></a></li>
+                <li><a href="#"><img src="java1.svg" alt="Java"></a></li>
+            </ul>
+        </div></center>
+        <h1 align="center">Contact</h1><br/>
+        <div class="contact">
+            <form action="/submit_form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="Contact-info">
+            <h3>Contact Information</h3>
+           <p> <img src="phone.svg" alt="html" />  +1 234 567 890</p>
+           <p><img src="mail.svg" alt="html"/>divyashreem2020@gmail.com</p>
+       </div>
+        <div class="footer">
+    <footer>&#169 Created By Divyashree | All rights are reserved.</footer>
+</div>
+<script src="script.js"></script></header>
+<style>
+body {
+    background:white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:black;
+    overflow-x: hidden;
+}
+header{
+    width:100%;
+    height:100vh;
+    background-size:cover;
+    font-family: sans-serif;
+}
+.navbar {
+    background-color:orange;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: black;
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+.nav-links a:hover{
+   color:red;
+}
+.firstsec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.detail{
+    margin-left: 8%;
+    margin-top:8%;
+}
+.detail h1{
+    font-size: 50px;
+    color:black;
+    margin-bottom: 20px;
+}
+span{
+    color:orange;
+}
+.detail p{
+    color: black;
+    line-height: 22px;
+}
+.detail a{
+    background: black;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin:30px 0;
+    border-radius: 5px;
+}
+.gif {
+    flex: 1;
+    text-align: center;
+}
+
+.gif img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top:5%;
+    margin-left:15%;
+}
+.burger-menu {
+    display: none;
+    color: black;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.skill {
+    text-align: center;
+    margin-top: 20px; 
+}
+.skill h1 {
+    color: black; 
+}
+
+.skill ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 20px 0; 
+}
+
+.skill li {
+    display: inline-block; 
+    margin: 0 10px;
+}
+
+.skill a {
+    text-decoration: none; 
+    display: block;
+}
+
+.skill img {
+    max-width: 50px; 
+    height: auto;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    transition: transform 0.3s ease-in-out; 
+}
+.skill img:hover {
+    transform: scale(1.1); 
+}
+.contact {
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #f4f4f4; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+.contact form {
+    margin-top: 20px; 
+}
+.contact label {
+    display: block; 
+    margin-bottom: 8px; 
+}
+.contact input[type="text"],
+.contact input[type="email"],
+.contact input[type="submit"],
+.contact textarea {
+    width: 100%; 
+    padding: 8px; 
+    margin-bottom: 16px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.contact input[type="submit"] {
+    background-color:orange; 
+    color: #fff; 
+    cursor: pointer; 
+}
+.contact input[type="submit"]:hover {
+    background-color:lightgreen; 
+}
+.Contact-info {
+    text-align: center;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.Contact-info h3 {
+    color: #333;
+    font-size: 1.5em;
+}
+
+.Contact-info p {
+    margin: 10px 0;
+}
+
+.Contact-info img {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 10px;
+}
+footer{
+    position:relative;
+    text-align:center;
+    padding:15px;
+    background:orange;
+    color:black;
+}
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    burgerMenu.addEventListener('click', function () {
+        navLinks.classList.toggle('show');
+    });
+});
+</script>
+</body>
+</html>
