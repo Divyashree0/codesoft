@@ -30,13 +30,19 @@
 <center>
 <p>
     <h1>About</h1><br>
-    Skills involve practice. You master skills through repetitiveness and consistent effort. Experience is when you apply your knowledge and skills to a specific situation or context. If you isolate the three and focus on knowledge, you can learn all there is to know about playing the violin in theory.</p></center>
+    Skills involve practice. You master skills through repetitiveness and consistent effort. 
+    Experience is when you apply your knowledge and skills to a specific situation or context. 
+    If you isolate the three and focus on knowledge, you can learn all there is to know about playing the violin in theory.
+    I learnt so many topics like C,C++,HTML,CSS,JavaScript,Java etc.By using HTML we can structure our webpage,
+    by using CSS we can style our webpage.There are different types of CSS like Internal CSS,Inline CSS and External CSS.
+    Javascript is the scripting language,we can add some functions using javascript.
+</p></center>
     <center>
         <div class="skill">
             <h1 align="center">Skills</h1><br/>
             <ul>
                 <li><a href="#"><img src="c.svg" alt="C"></a></li>
-                <li><a href="#"><img src="cs.svg" alt="C+"></a></li>
+                <li><a href="#"><img src="cs.svg" alt="C++"></a></li>
                 <li><a href="#"><img src="html.svg" alt="HTML"></a></li>
                 <li><a href="#"><img src="css.svg" alt="CSS"></a></li>
                 <li><a href="#"><img src="javascript.svg" alt="JavaScript"></a></li>
@@ -262,40 +268,6 @@ footer{
     background:orange;
     color:black;
 }
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: white;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 0;
-        text-align: center;
-    }
-
-    .burger-menu {
-        display: block;
-    }
-}
 </style>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const burgerMenu = document.querySelector('.burger-menu');
-    const navLinks = document.querySelector('.nav-links');
-
-    burgerMenu.addEventListener('click', function () {
-        navLinks.classList.toggle('show');
-    });
-});
-</script>
 </body>
 </html>
